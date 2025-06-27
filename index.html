@@ -4,17 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SupabaseBook</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <nav>
     <h1>📘 SupabaseBook</h1>
-    <textarea id="postInput" placeholder="Apa yang kamu pikirkan?"></textarea>
-    <input type="file" id="fileInput" />
-    <button onclick="submitPost()">Bagikan</button>
-    <div id="postList"></div>
-  </div>
+    <ul>
+      <li><a href="#" onclick="navigate('feed')">Timeline</a></li>
+      <li><a href="#" onclick="navigate('profile')">Profil</a></li>
+      <li><a href="#" onclick="navigate('messages')">Pesan</a></li>
+      <li><a href="#" onclick="navigate('groups')">Grup</a></li>
+      <li><a href="#" onclick="navigate('shop')">Item Shop</a></li>
+      <li><a href="#" onclick="navigate('billing')">Billing</a></li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <h2>Selamat datang di SupabaseBook 👋</h2>
+    <p>Pilih menu dari navigasi di atas untuk memulai.</p>
+  </main>
   <script src="config.js"></script>
-  <script src="main.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
