@@ -1,0 +1,18 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+}
+nav button {
+  margin: 0 5px;
+}
+.page {
+  display: none;
+  padding: 1em;
+}
